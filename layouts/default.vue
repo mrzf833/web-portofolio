@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Nuxt />
+    <Navbar />
+    <div class="pb-14 pt-12 sm:pt-14" >
+      <Nuxt/>
+    </div>
+    <NavBot/>
   </div>
 </template>
 
@@ -22,6 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #2D3448;
 }
 
 *,
