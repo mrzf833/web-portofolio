@@ -23,13 +23,13 @@
                         </div>
                         <div class="inline-block nav-item">
                             <div class="py-4">
-                                <nuxt-link to="" class="mx-3 text-2xl py-4 nav-link text-gray-200">Skills</nuxt-link>
+                                <nuxt-link to="/skills" class="mx-3 text-2xl py-4 nav-link text-gray-200">Skills</nuxt-link>
                             </div>
                             <hr>
                         </div>
                         <div class="inline-block nav-item">
                             <div class="py-4">
-                                <nuxt-link to="" class="mx-3 text-2xl py-4 nav-link text-gray-200">Contact</nuxt-link>
+                                <nuxt-link to="/contact" class="mx-3 text-2xl py-4 nav-link text-gray-200">Contact</nuxt-link>
                             </div>
                             <hr>
                         </div>
@@ -74,6 +74,9 @@ export default {
 }
 </script>
 <style>
+    .navbar{
+        z-index: 100;
+    }
     .nav-item hr{
         margin: 0;
         border: 2px solid #2ecc71;

@@ -17,7 +17,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      padding: ['hover']
+      padding: ['hover'],
+      translate: ['active', 'group-hover']
     },
   },
   plugins: [],
