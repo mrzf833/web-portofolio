@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto text-gray-200 h-full">
+  <div class="container mx-auto text-gray-200 h-full overflow-hidden">
     <div class="py-6">
       <div class="flex justify-center">
         <img src="~/assets/profile.jpg" alt="" class="img1 w-52 h-52 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover">
