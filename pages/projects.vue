@@ -3,11 +3,11 @@
         <h1 class="text-4xl text-white text-center text1 ">Hello, Welcome To <p class="inline-block text-green-400">My Projects</p> Page</h1>
         <div class="pt-12 flex flex-row flex-wrap">
             <div class="w-full sm:w-1/2 md:w-1/3 mb-4" v-for="(item, index) in cards" :key="index">
-                <div :class="'p-4 flex flex-col box' + item">
-                    <img @mouseover="mouseOverImg" @mouseleave="mouseLeaveImg" :class="'rounded-t-lg w-11/12 m-auto img img' + item" src="https://images.unsplash.com/photo-1619314367523-bc28b916dd9d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    <div :class="'text-gray-600 bg-white p-4 rounded-lg -mx-2 text-card text-card' + item">
-                        <h3 class="text-2xl pb-3">Laundry</h3>
-                        <p>Aplikasi untuk memenejemen usaha laundry</p>
+                <div :class="'p-4 flex flex-col box' + (index + 1)">
+                    <img @mouseover="mouseOverImg" @mouseleave="mouseLeaveImg" :class="'rounded-t-lg w-11/12 m-auto img img' + (index + 1)" :src="item.img" alt="">
+                    <div :class="'text-gray-600 bg-white p-4 rounded-lg -mx-2 border-gray-300 border text-card text-card' + (index + 1)">
+                        <h3 class="text-2xl pb-3">{{ item.head }}</h3>
+                        <p>{{ item.body }}</p>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,38 @@ gsap.registerPlugin(scrollTrigger);
 export default {
     data() {
         return {
-            cards: [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+            cards: [
+                {
+                    img: require(`~/assets/project/koperasi.png`),
+                    head: "Koperasi",
+                    body: "aplikasi ini untuk mengetahui keungan koperasi + point of sales dari client(SAKARAGUNA)"
+                },
+                {
+                    img: require(`~/assets/project/laundry.png`),
+                    head: "Laundry",
+                    body: "aplikasi ini untuk mengelola usaha laundry"
+                },
+                {
+                    img: require(`~/assets/project/peminjaman_senjata.png`),
+                    head: "Peminjaman Senjata",
+                    body: "aplikasi ini untuk mengelola Gudang Senjata dari client(SAKARAGUNA)"
+                },
+                {
+                    img: require(`~/assets/project/absensi_kendaraan.png`),
+                    head: "Absensi Kendaraan",
+                    body: "aplikasi ini untuk mengelola Data Kendaraan dari client(SAKARAGUNA)"
+                },
+                {
+                    img: require(`~/assets/project/pengaduan_masyarakat.png`),
+                    head: "Pengaduan Masyarakat",
+                    body: "aplikasi ini berguna untuk membuat pengaduan dari masyarakat lansung di proses oleh admin aplikasi"
+                },
+                {
+                    img: require(`~/assets/project/pos.png`),
+                    head: "Point Of Sales And Inventory",
+                    body: "aplikasi ini berguna untuk memanajemen inventory dan melakukan transaksi penjualan"
+                },
+            ]
         }
     },
     mounted() {

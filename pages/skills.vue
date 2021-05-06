@@ -5,17 +5,17 @@
             <div class="">
                 <h3 class="text-4xl text-white border-b-4 border-green-400 pb-2 skills">Skills</h3>
             </div>
-            <div class="flex flex-row flex-wrap ml-32 mt-10">
-                <div v-for="card in cards" :key="card" :class="'w-full sm:w-1/2 md:w-1/3 mb-16 card-skills card-skill' + card ">
+            <div class="flex flex-row flex-wrap ml-32 mt-10 overflow-hidden">
+                <div v-for="(item, index) in cards" :key="index" :class="'w-full sm:w-1/2 md:w-1/3 mb-16 card-skills card-skill' + (index + 1) ">
                     <div class="flex justify-center">
                         <div class="">
-                            <div class="flex justify-center w-full"><PhpLogo class="w-32"/></div>
-                            <h4 class="text-xl text-center mt-5"><p class="text-yellow-300 inline-block">3 Years</p> <p class="text-white inline-block">Of Experience</p></h4>
+                            <div class="flex justify-center w-full"><component :is="item.logo" class="w-32"></component></div>
+                            <h4 class="text-xl text-center mt-5"><p class="text-yellow-300 inline-block"> {{ item.time }}</p> <p class="text-white inline-block">Of Experience</p></h4>
                         </div>
                         <div class="">
                             <div class="w-full h-full flex justify-center items-center">
                                 <h4 class="text-yellow-300 text-2xl head-logo flex justify-center">
-                                PHP
+                                {{ item.head }}
                             </h4>
                             </div>
                         </div>
@@ -28,11 +28,85 @@
 <script>
 import gsap from "gsap/dist/gsap"
 import scrollTrigger from "gsap/dist/ScrollTrigger"
+import LogoPhp from '../components/PhpLogo'
+import CssLogo from '../components/CssLogo'
+import MysqlLogo from '../components/MysqlLogo'
+import LaravelLogo from '../components/LaravelLogo'
+import VueLogo from '../components/VueLogo'
+import JqueryLogo from '../components/JqueryLogo'
+import JavascriptLogo from '../components/JavascriptLogo'
+import BootstrapLogo from '../components/BootstrapLogo'
+import TailwindcssLogo from '../components/TailwindcssLogo'
+import NuxtjsLogo from '../components/NuxtjsLogo'
+import PostgresqlLogo from '../components/PostgresqlLogo'
+
 gsap.registerPlugin(scrollTrigger);
 export default {
+    components: {
+        LogoPhp, CssLogo, MysqlLogo,
+        LaravelLogo, VueLogo, JqueryLogo,
+        JavascriptLogo, BootstrapLogo, TailwindcssLogo,
+        NuxtjsLogo, PostgresqlLogo
+    },
     data() {
         return {
-            cards: [1,2,3,4,5,6,7,8]
+            cards: [
+                {
+                    logo: 'LogoPhp',
+                    head: 'PHP',
+                    time: '> 2 Year'
+                },
+                {
+                    logo: 'CssLogo',
+                    head: 'CSS',
+                    time: '> 2 Year'
+                },
+                {
+                    logo: 'MysqlLogo',
+                    head: 'MYSQL',
+                    time: '> 2 Year'
+                },
+                {
+                    logo: 'JavascriptLogo',
+                    head: 'JAVASCRIPT',
+                    time: '> 2 Year'
+                },
+                {
+                    logo: 'JqueryLogo',
+                    head: 'JQUERY',
+                    time: '> 1 Year'
+                },
+                {
+                    logo: 'LaravelLogo',
+                    head: 'LARAVEL',
+                    time: '> 1 Year'
+                },
+                {
+                    logo: 'BootstrapLogo',
+                    head: 'BOOTSTRAP',
+                    time: '> 1 Year'
+                },
+                {
+                    logo: 'VueLogo',
+                    head: 'VUE JS',
+                    time: '< 1 Year'
+                },
+                {
+                    logo: 'TailwindcssLogo',
+                    head: 'Tailwindcss',
+                    time: '< 1 Year'
+                },
+                {
+                    logo: 'NuxtjsLogo',
+                    head: 'NUXTJS',
+                    time: '< 1 Year'
+                },
+                {
+                    logo: 'PostgresqlLogo',
+                    head: 'POSTGRESQL',
+                    time: '< 1 Year'
+                }
+            ]
         }
     },
     mounted() {
