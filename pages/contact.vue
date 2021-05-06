@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto pt-12">
+    <div class="container mx-auto pt-12 overflow-hidden">
         <h1 class="text-4xl text-center text-white">
             <p class="inline-block text1">Hello, if you want</p> 
             <p class="inline-block text-green-400 text2">contact me,</p> 

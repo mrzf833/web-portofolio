@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto pt-12">
+    <div class="container mx-auto pt-12 overflow-hidden">
         <h1 class="text-4xl text-white text-center text1 ">Hello, Welcome To <p class="inline-block text-green-400">My Projects</p> Page</h1>
         <div class="pt-12 flex flex-row flex-wrap">
             <div class="w-full sm:w-1/2 md:w-1/3 mb-4" v-for="(item, index) in cards" :key="index">

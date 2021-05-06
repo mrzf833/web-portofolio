@@ -1,8 +1,8 @@
 <template>
-    <div class="container mx-auto pt-12">
+    <div class="container mx-auto pt-12 overflow-hidden">
         <h1 class=" text-4xl text-white text-center"><p class="text1 inline-block">This Is</p> <p class="text2 inline-block text-green-400">My Experience</p></h1>
         <div class="pt-12 flex relative">
-            <div class="">
+            <div class="text-skill">
                 <h3 class="text-4xl text-white border-b-4 border-green-400 pb-2 skills">Skills</h3>
             </div>
             <div class="flex flex-row flex-wrap ml-32 mt-10 overflow-hidden">
@@ -150,6 +150,14 @@ export default {
 }
 </script>
 <style scoped>
+    @media only screen and (max-width: 313px) {
+        .text-skill{
+            display: none;
+        }
+        .ml-32{
+            margin: 0;
+        }
+    }
     .skills{
         top: 50%;
         transform: translateY(-50%);
