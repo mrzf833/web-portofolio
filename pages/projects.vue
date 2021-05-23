@@ -8,6 +8,13 @@
                     <div :class="'text-gray-600 bg-white p-4 rounded-lg -mx-2 border-gray-300 border text-card text-card' + (index + 1)">
                         <h3 class="text-2xl pb-3">{{ item.head }}</h3>
                         <p>{{ item.body }}</p>
+                        <template v-if="item.teknologi.length > 0">
+                            <div class="mt-2">
+                                <span class="bg-green-600 text-gray-200 py-1 px-2 rounded-sm m-1 inline-block" v-for="(item2, index2) in item.teknologi" :key="index2">
+                                    {{ item2 }}
+                                </span>
+                            </div>
+                        </template>
                     </div>
                 </div>
             </div>
@@ -24,34 +31,69 @@ export default {
         return {
             cards: [
                 {
+                    img: require(`~/assets/project/chat-sederhana.png`),
+                    head: "Chat Sederhana",
+                    body: "aplikasi sederhana ini berguna untuk mengirim atau menerima pesan",
+                    teknologi: [
+                        'laravel',
+                        'nuxt js',
+                        'tailwind css',
+                        'pusher'
+                    ]
+                },
+                {
                     img: require(`~/assets/project/koperasi.png`),
                     head: "Koperasi",
-                    body: "aplikasi ini untuk mengetahui keungan koperasi + point of sales dari client(SAKARAGUNA)"
+                    body: "aplikasi ini untuk mengetahui keungan koperasi + point of sales dari client(SAKARAGUNA)",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
                 {
                     img: require(`~/assets/project/laundry.png`),
                     head: "Laundry",
-                    body: "aplikasi ini untuk mengelola usaha laundry"
+                    body: "aplikasi ini untuk mengelola usaha laundry",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
                 {
                     img: require(`~/assets/project/peminjaman_senjata.png`),
                     head: "Peminjaman Senjata",
-                    body: "aplikasi ini untuk mengelola Gudang Senjata dari client(SAKARAGUNA)"
+                    body: "aplikasi ini untuk mengelola Gudang Senjata dari client(SAKARAGUNA)",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
                 {
                     img: require(`~/assets/project/absensi_kendaraan.png`),
                     head: "Absensi Kendaraan",
-                    body: "aplikasi ini untuk mengelola Data Kendaraan dari client(SAKARAGUNA)"
+                    body: "aplikasi ini untuk mengelola Data Kendaraan dari client(SAKARAGUNA)",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
                 {
                     img: require(`~/assets/project/pengaduan_masyarakat.png`),
                     head: "Pengaduan Masyarakat",
-                    body: "aplikasi ini berguna untuk membuat pengaduan dari masyarakat lansung di proses oleh admin aplikasi"
+                    body: "aplikasi ini berguna untuk membuat pengaduan dari masyarakat lansung di proses oleh admin aplikasi",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
                 {
                     img: require(`~/assets/project/pos.png`),
                     head: "Point Of Sales And Inventory",
-                    body: "aplikasi ini berguna untuk memanajemen inventory dan melakukan transaksi penjualan"
+                    body: "aplikasi ini berguna untuk memanajemen inventory dan melakukan transaksi penjualan",
+                    teknologi: [
+                        'laravel',
+                        'bootstrap'
+                    ]
                 },
             ]
         }
