@@ -3,7 +3,7 @@
 ## Build Setup
 
 ```bash
-# install dependencies
+# install dependencies SUDAH GANTI KE YARN
 $ npm install
 
 # serve with hot reload at localhost:3000
