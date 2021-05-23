@@ -88,7 +88,7 @@ export default {
                 },
                 {
                     logo: 'VueLogo',
-                    head: 'VUE JS',
+                    head: 'VUEJS',
                     time: '< 1 Year'
                 },
                 {

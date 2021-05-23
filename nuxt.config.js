@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'web-portofolio',
+    title: 'Zulfa Iniko Falaq',
     htmlAttrs: {
       lang: 'en'
     },
