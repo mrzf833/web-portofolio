@@ -61,7 +61,7 @@ export default {
             let options = { month: 'long'};
             let month_full = (new Intl.DateTimeFormat('id-ID', options).format(clock))
             let date = clock.getDate() < 10 ? '0' + clock.getDate() : clock.getDate()
-            let month = clock.getMonth() < 10 ? '0' + clock.getMonth() : clock.getMonth()
+            let month = (clock.getMonth() + 1) < 10 ? '0' + (clock.getMonth() + 1) : (clock.getMonth() + 1)
             let year = clock.getFullYear() < 10 ? '0' + clock.getFullYear() : clock.getFullYear()
             document.getElementById('date').innerHTML = month_full + ' / ' + date + '-' + month + '-' + year
             // clock
