@@ -54,51 +54,51 @@ export default {
                 {
                     logo: 'LogoPhp',
                     head: 'PHP',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'CssLogo',
                     head: 'CSS',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'MysqlLogo',
                     head: 'MYSQL',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'JavascriptLogo',
                     head: 'JAVASCRIPT',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'JqueryLogo',
                     head: 'JQUERY',
-                    time: '> 1 Year'
+                    time: '> 2 Year'
                 },
                 {
                     logo: 'LaravelLogo',
                     head: 'LARAVEL',
-                    time: '> 1 Year'
+                    time: '> 2 Year'
                 },
                 {
                     logo: 'BootstrapLogo',
                     head: 'BOOTSTRAP',
-                    time: '> 1 Year'
+                    time: '> 2 Year'
                 },
                 {
                     logo: 'VueLogo',
                     head: 'VUEJS',
-                    time: '< 1 Year'
-                },
-                {
-                    logo: 'TailwindcssLogo',
-                    head: 'Tailwindcss',
-                    time: '< 1 Year'
+                    time: '< 2 Year'
                 },
                 {
                     logo: 'NuxtjsLogo',
                     head: 'NUXTJS',
+                    time: '< 2 Year'
+                },
+                {
+                    logo: 'TailwindcssLogo',
+                    head: 'Tailwindcss',
                     time: '< 1 Year'
                 },
                 {

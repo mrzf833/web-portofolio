@@ -2,12 +2,18 @@
     <div class="container mx-auto pt-12 overflow-hidden">
         <h1 class="text-4xl text-white text-center text1 ">Hello, Welcome To <p class="inline-block text-green-400">My Projects</p> Page</h1>
         <div class="pt-12 flex flex-row flex-wrap">
-            <div class="w-full sm:w-1/2 md:w-1/3 mb-4" v-for="(item, index) in cards" :key="index">
+            <div class="w-full lg:w-1/2 2xl:w-1/3 mb-4" v-for="(item, index) in cards" :key="index">
                 <div :class="'p-4 flex flex-col box' + (index + 1)">
                     <img @mouseover="mouseOverImg" @mouseleave="mouseLeaveImg" :class="'rounded-t-lg w-11/12 m-auto img img' + (index + 1)" :src="item.img" alt="">
                     <div :class="'text-gray-600 bg-white p-4 rounded-lg -mx-2 border-gray-300 border text-card text-card' + (index + 1)">
                         <h3 class="text-2xl pb-3">{{ item.head }}</h3>
-                        <p>{{ item.body }}</p>
+                        <p>
+                            {{ item.body }}
+                            <a v-if="item.link" :href="item.link" class="text-blue-500" target="_blank">Lihat Website</a>
+                        </p>
+                        <pre v-if="item.text_add">
+                            {{ item.text_add }}
+                        </pre>
                         <template v-if="item.teknologi.length > 0">
                             <div class="mt-2">
                                 <span class="bg-green-600 text-gray-200 py-1 px-2 rounded-sm m-1 inline-block" v-for="(item2, index2) in item.teknologi" :key="index2">
@@ -31,12 +37,37 @@ export default {
         return {
             cards: [
                 {
+                    img: require(`~/assets/project/crypto.png`),
+                    head: "Crypto",
+                    body: "aplikasi ini di desain oleh Calvin. jadi ini saya slincing desain ke front end saja.",
+                    link: "https://crypto-mrzf833.herokuapp.com",
+                    teknologi: [
+                        'tailwind css',
+                        'html'
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/pelayanan-kesehatan.png`),
+                    head: "Pelayanan Kesehatan",
+                    body: "aplikasi ini berguna untuk mencari berita yang valid dan sudah di validasi oleh dokternya lansung",
+                    link: "https://pelayanan-kesehatan.herokuapp.com",
+                    text_add: "\n-untuk umum\nemail: umum@app.com\npassword: passsword\n-untuk doctor\nemail: doctor@app.com\npassword: passsword",
+                    teknologi: [
+                        'laravel 8',
+                        'nuxt js 2',
+                        'tailwind css',
+                        'pusher',
+                    ]
+                },
+                {
                     img: require(`~/assets/project/chat-sederhana.png`),
                     head: "Chat Sederhana",
                     body: "aplikasi sederhana ini berguna untuk mengirim atau menerima pesan",
+                    link: "https://chat-sederhana.herokuapp.com",
+                    text_add: "\nusername: user1\npassword: user1\n\nusername: user2\npassword: user2",
                     teknologi: [
-                        'laravel',
-                        'nuxt js',
+                        'laravel 8',
+                        'nuxt js 2',
                         'tailwind css',
                         'pusher'
                     ]
@@ -46,7 +77,7 @@ export default {
                     head: "Koperasi",
                     body: "aplikasi ini untuk mengetahui keungan koperasi + point of sales dari client(SAKARAGUNA)",
                     teknologi: [
-                        'laravel',
+                        'laravel 8',
                         'bootstrap'
                     ]
                 },
@@ -55,7 +86,7 @@ export default {
                     head: "Laundry",
                     body: "aplikasi ini untuk mengelola usaha laundry",
                     teknologi: [
-                        'laravel',
+                        'laravel 8',
                         'bootstrap'
                     ]
                 },
@@ -94,7 +125,7 @@ export default {
                         'laravel',
                         'bootstrap'
                     ]
-                },
+                }
             ]
         }
     },
