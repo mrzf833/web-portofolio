@@ -48,7 +48,7 @@ export default {
                 },
                 {
                     img: require(`~/assets/project/pelayanan-kesehatan.png`),
-                    head: "Pelayanan Kesehatan",
+                    head: "Pelayanan Kesehatan, (Maintenance API)",
                     body: "aplikasi ini berguna untuk mencari berita yang valid dan sudah di validasi oleh dokternya lansung",
                     link: "https://web-production-4f12.up.railway.app",
                     text_add: "\n-untuk umum\nemail: umum@app.com\npassword: passsword\n-untuk doctor\nemail: doctor@app.com\npassword: passsword",
@@ -61,7 +61,7 @@ export default {
                 },
                 {
                     img: require(`~/assets/project/chat-sederhana.png`),
-                    head: "Chat Sederhana",
+                    head: "Chat Sederhana, (Maintenance API)",
                     body: "aplikasi sederhana ini berguna untuk mengirim atau menerima pesan",
                     link: "https://web-production-bf37.up.railway.app",
                     text_add: "\nusername: user1\npassword: user1\n\nusername: user2\npassword: user2",
