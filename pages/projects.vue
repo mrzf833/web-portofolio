@@ -40,7 +40,7 @@ export default {
                     img: require(`~/assets/project/crypto.png`),
                     head: "Crypto",
                     body: "aplikasi ini di desain oleh Calvin. jadi ini saya slincing desain ke front end saja.",
-                    link: "https://crypto-heroku-railway-production.up.railway.app/index.html",
+                    link: "https://crypto.mrzf833.me",
                     teknologi: [
                         'tailwind css',
                         'html'
