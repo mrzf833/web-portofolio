@@ -38,7 +38,7 @@ export default {
             cards: [
                 {
                     img: require(`~/assets/project/crypto.png`),
-                    head: "Crypto",
+                    head: "Cryptooo",
                     body: "aplikasi ini di desain oleh Calvin. jadi ini saya slincing desain ke front end saja.",
                     link: "https://crypto.mrzf833.me",
                     teknologi: [
