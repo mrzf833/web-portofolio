@@ -48,9 +48,9 @@ export default {
                 },
                 {
                     img: require(`~/assets/project/pelayanan-kesehatan.png`),
-                    head: "Pelayanan Kesehatan, (Maintenance API)",
+                    head: "Pelayanan Kesehatan",
                     body: "aplikasi ini berguna untuk mencari berita yang valid dan sudah di validasi oleh dokternya lansung",
-                    link: "https://web-production-4f12.up.railway.app",
+                    link: "https://web-kesehatan.mrzf833.me",
                     text_add: "\n-untuk umum\nemail: umum@app.com\npassword: passsword\n-untuk doctor\nemail: doctor@app.com\npassword: passsword",
                     teknologi: [
                         'laravel 8',
