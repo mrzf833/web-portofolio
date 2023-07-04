@@ -61,9 +61,9 @@ export default {
                 },
                 {
                     img: require(`~/assets/project/chat-sederhana.png`),
-                    head: "Chat Sederhana, (Maintenance API)",
+                    head: "Chat Sederhana",
                     body: "aplikasi sederhana ini berguna untuk mengirim atau menerima pesan",
-                    link: "https://web-production-bf37.up.railway.app",
+                    link: "https://web-chat.mrzf833.me",
                     text_add: "\nusername: user1\npassword: user1\n\nusername: user2\npassword: user2",
                     teknologi: [
                         'laravel 8',
