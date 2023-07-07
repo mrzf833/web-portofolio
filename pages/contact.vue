@@ -15,10 +15,12 @@
                     <div class="inline-block logo"><TelegramLogo class="w-12 inline-block"/></div>
                     <a href="https://t.me/MRzfi" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://t.me/MRzfi</a>
                 </div>
+              <!--
                 <div class="mb-8">
                     <div class="inline-block logo"><WhatsappLogo class="w-12 inline-block"/></div>
                     <a href="https://wa.me/6282278329458" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://wa.me/6282278329458</a>
                 </div>
+              -->
                 <div class="mb-8">
                     <div class="inline-block logo"><GithubLogo class="w-12 inline-block"/></div>
                     <a href="https://github.com/mrzf833" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://github.com/mrzf833</a>
