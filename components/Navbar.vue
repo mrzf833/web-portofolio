@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="flex-auto">
-                <div class="flex h-full items-center justify-end">
+                <div class="flex h-full items-center justify-end mx-4">
                     <div class="inline-block">
                         <p class="flex justify-center text-gray-200 md:text-gray-200 text-sm sm:text-base" id="date">Januari / 20-01-2021</p>
                         <p class="flex justify-center text-gray-200 md:text-gray-200 text-sm sm:text-base" id="clock">00 : 00 : 00</p>
