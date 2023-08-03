@@ -13,7 +13,7 @@
                 </div>
                 <div class="mb-8">
                     <div class="inline-block logo"><TelegramLogo class="w-12 inline-block"/></div>
-                    <a href="https://t.me/MRzfi" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://t.me/MRzfi</a>
+                    <a href="https://t.me/mrzf833" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://t.me/mrzf833</a>
                 </div>
               <!--
                 <div class="mb-8">
@@ -24,6 +24,11 @@
                 <div class="mb-8">
                     <div class="inline-block logo"><GithubLogo class="w-12 inline-block"/></div>
                     <a href="https://github.com/mrzf833" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://github.com/mrzf833</a>
+                </div>
+
+                <div class="mb-8 flex items-center">
+                    <div class="inline-block logo"><LinkedInLogo class="w-12 inline-block"/></div>
+                        <a href="https://www.linkedin.com/in/zulfa-iniko-falaq" class="logo-link inline-block ml-3 text-blue-500 text-xl hover:text-blue-700" target="_blank">https://www.linkedin.com/in/zulfa-iniko-falaq</a>
                 </div>
             </div>
         </div>

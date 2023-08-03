@@ -12,9 +12,10 @@
       </div>
       <div class="flex justify-center pt-6">
         <div class="block">
-          <a href="https://t.me/MRzfi" class="group inline-block logo1" target="_blank"><TelegramLogo class="w-10 duration-500 ease-in-out transform group-hover:-translate-x-4"/></a>
+          <a href="https://t.me/mrzf833" class="group inline-block logo1" target="_blank"><TelegramLogo class="w-10 duration-500 ease-in-out transform group-hover:-translate-x-4"/></a>
           <a href="https://www.facebook.com/mrzf833" class="group inline-block logo2" target="_blank"><FacebookLogo class="w-10 mx-6 duration-500 ease-in-out transform group-hover:-translate-y-4"/></a>
           <a href="https://github.com/mrzf833" class="group inline-block logo3" target="_blank"><GithubLogo class="w-10 duration-500 ease-in-out transform group-hover:translate-x-4" /></a>
+          <a href="https://www.linkedin.com/in/zulfa-iniko-falaq" class="group inline-block logo4" target="_blank"><LinkedInLogo class="w-10 mx-6 duration-500 ease-in-out transform group-hover:translate-y-4"/></a>
         </div>
       </div>
     </div>
@@ -65,6 +66,12 @@ export default {
           x: 0,
           opacity: 1
       })
+
+      gsap.to('.logo4', {
+        duration: 1,
+        y: 0,
+        opacity: 1
+      })
     }
   },
 }
@@ -99,4 +106,10 @@ export default {
   transform: translateX(1rem);
   opacity: 0;
 }
+
+.logo4{
+  transform: translateY(1rem);
+  opacity: 0;
+}
+
 </style>
