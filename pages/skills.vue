@@ -74,17 +74,17 @@ export default {
                 {
                     logo: 'JqueryLogo',
                     head: 'JQUERY',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'LaravelLogo',
                     head: 'LARAVEL',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'BootstrapLogo',
                     head: 'BOOTSTRAP',
-                    time: '> 2 Year'
+                    time: '> 3 Year'
                 },
                 {
                     logo: 'VueLogo',
@@ -99,12 +99,12 @@ export default {
                 {
                     logo: 'TailwindcssLogo',
                     head: 'Tailwindcss',
-                    time: '< 1 Year'
+                    time: '< 2 Year'
                 },
                 {
                     logo: 'PostgresqlLogo',
                     head: 'POSTGRESQL',
-                    time: '< 1 Year'
+                    time: '< 2 Year'
                 }
             ]
         }
