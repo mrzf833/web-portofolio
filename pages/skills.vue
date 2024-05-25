@@ -105,7 +105,22 @@ export default {
                     logo: 'PostgresqlLogo',
                     head: 'POSTGRESQL',
                     time: '< 2 Year'
-                }
+                },
+                {
+                    logo: 'MongoLogo',
+                    head: 'MongoLogo',
+                    time: '< 2 Year'
+                },
+                {
+                    logo: 'GolangLogo',
+                    head: 'Golang',
+                    time: '> 1 Year'
+                },
+                {
+                    logo: 'FiberLogo',
+                    head: 'GoFiber',
+                    time: '> 1 Year'
+                },
             ]
         }
     },
