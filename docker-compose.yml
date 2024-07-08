@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  porto-app:
+    build: .
+    container_name: porto-app
+    restart: unless-stopped
+    ports:
+      - 3000:3000
