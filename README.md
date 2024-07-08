@@ -18,3 +18,11 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+## docker
+### build & start
+- docker compose up -d --build
+
+### remove
+- docker compose down --rmi=all
