@@ -43,7 +43,8 @@ export default {
                     link: "https://crypto.mrzf833.me",
                     teknologi: [
                         'tailwind css',
-                        'html'
+                        'html',
+                        'docker'
                     ]
                 },
                 {
@@ -57,6 +58,7 @@ export default {
                         'nuxt js 2',
                         'tailwind css',
                         'pusher',
+                        'docker'
                     ]
                 },
                 {
@@ -69,7 +71,8 @@ export default {
                         'laravel 8',
                         'nuxt js 2',
                         'tailwind css',
-                        'pusher'
+                        'pusher',
+                        'docker'
                     ]
                 },
                 {
@@ -87,7 +90,8 @@ export default {
                     body: "aplikasi ini untuk mengelola usaha laundry",
                     teknologi: [
                         'laravel 8',
-                        'bootstrap'
+                        'bootstrap',
+                        'docker'
                     ]
                 },
                 {
@@ -114,7 +118,8 @@ export default {
                     body: "aplikasi ini berguna untuk membuat pengaduan dari masyarakat lansung di proses oleh admin aplikasi",
                     teknologi: [
                         'laravel',
-                        'bootstrap'
+                        'bootstrap',
+                        'docker'
                     ]
                 },
                 {
