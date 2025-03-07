@@ -54,37 +54,37 @@ export default {
                 {
                     logo: 'LogoPhp',
                     head: 'PHP',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'CssLogo',
                     head: 'CSS',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'MysqlLogo',
                     head: 'MYSQL',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'JavascriptLogo',
                     head: 'JAVASCRIPT',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'JqueryLogo',
                     head: 'JQUERY',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'LaravelLogo',
                     head: 'LARAVEL',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'BootstrapLogo',
                     head: 'BOOTSTRAP',
-                    time: '> 3 Year'
+                    time: '> 4 Year'
                 },
                 {
                     logo: 'VueLogo',
@@ -104,7 +104,7 @@ export default {
                 {
                     logo: 'PostgresqlLogo',
                     head: 'POSTGRESQL',
-                    time: '< 2 Year'
+                    time: '< 3 Year'
                 },
                 {
                     logo: 'MongoLogo',
@@ -114,12 +114,12 @@ export default {
                 {
                     logo: 'GolangLogo',
                     head: 'Golang',
-                    time: '> 1 Year'
+                    time: '> 2 Year'
                 },
                 {
                     logo: 'FiberLogo',
                     head: 'GoFiber',
-                    time: '> 1 Year'
+                    time: '> 2 Year'
                 },
             ]
         }

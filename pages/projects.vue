@@ -37,6 +37,61 @@ export default {
         return {
             cards: [
                 {
+                    img: require(`~/assets/project/bri_logo.png`),
+                    head: "Api BRI Update Merchant Qris",
+                    body: "API ini digunakan untuk memperbarui data merchant yang terhubung dengan sistem QRIS, memastikan informasi tetap akurat, terkini, dan sesuai dengan kebutuhan operasional.",
+                    teknologi: [
+                        'golang',
+                        'mysqli',
+                        'elasticsearch',
+                        'bamboo',
+                        'redis'
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/bri_logo.png`),
+                    head: "Api BRI Qris untuk alipay",
+                    body: "API ini menyediakan berbagai fungsi untuk mendukung proses pembayaran melalui pihak ketiga (Alipay), termasuk pembuatan (generate) QRIS, pembatalan (cancel), pembayaran (payment), pengecekan status transaksi (check status), serta pengembalian dana (refund). Dengan API ini, sistem dapat mengelola transaksi secara efisien dan memastikan pengalaman pembayaran yang lebih lancar dan aman.",
+                    teknologi: [
+                        'golang',
+                        'mysqli',
+                        'elasticsearch',
+                        'bamboo',
+                        'redis'
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/bri_logo.png`),
+                    head: "Api BRI Cancel Qris MPN",
+                    body: "API ini berfungsi untuk membatalkan QRIS yang telah digenerate sebelumnya, memastikan bahwa kode tersebut tidak dapat digunakan kembali. Dengan menggunakan API ini, sistem dapat mengelola transaksi dengan lebih aman dan mencegah penyalahgunaan QRIS yang sudah tidak berlaku.",
+                    teknologi: [
+                        'golang',
+                        'mysqli',
+                        'elasticsearch',
+                        'bamboo'
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/rest_api_gofiber.png`),
+                    head: "Rest Api Gofiber",
+                    body: "Rest API ini dibuat untuk mempelajari tentang Golang Fiber. Di sini, Saya mengimplementasikan JWT untuk autentikasi, Gorm untuk ORM, Redis untuk caching, command-line interface, Elasticsearch, goroutines, dan queue. Beberapa fitur tersebut telah berhasil diimplementasikan dalam proyek ini.",
+                    link: "https://github.com/mrzf833/go-fiber-clean-architecture",
+                    teknologi: [
+                        'golang',
+                        'fiber',
+                        'postman',
+                        'gorm',
+                        'mysql',
+                        'swagger',
+                        'jwt token',
+                        'docker',
+                        'redis',
+                        'cli (cobra)',
+                        'elasticsearch',
+                        'queue',
+                    ]
+                },
+                {
                     img: require(`~/assets/project/crypto.png`),
                     head: "Crypto",
                     body: "aplikasi ini di desain oleh Calvin. jadi ini saya slincing desain ke front end saja.",

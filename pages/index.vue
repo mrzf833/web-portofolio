@@ -15,7 +15,8 @@
           <a href="https://t.me/mrzf833" class="group inline-block logo1" target="_blank"><TelegramLogo class="w-10 duration-500 ease-in-out transform group-hover:-translate-x-4"/></a>
           <a href="https://www.facebook.com/mrzf833" class="group inline-block logo2" target="_blank"><FacebookLogo class="w-10 mx-6 duration-500 ease-in-out transform group-hover:-translate-y-4"/></a>
           <a href="https://github.com/mrzf833" class="group inline-block logo3" target="_blank"><GithubLogo class="w-10 duration-500 ease-in-out transform group-hover:translate-x-4" /></a>
-          <a href="https://www.linkedin.com/in/zulfa-iniko-falaq" class="group inline-block logo4" target="_blank"><LinkedInLogo class="w-10 mx-6 duration-500 ease-in-out transform group-hover:translate-y-4"/></a>
+          <a href="https://www.linkedin.com/in/zulfa-iniko-falaq" class="group inline-block logo4" target="_blank"><LinkedInLogo class="w-10 ml-6 duration-500 ease-in-out transform group-hover:translate-y-4"/></a>
+          <a href="/cv_resume.pdf" class="group inline-block logo5" target="_blank"><CvLogo class="w-10 ml-6 mr-6 duration-500 ease-in-out transform group-hover:translate-x-4"/></a>
         </div>
       </div>
     </div>
@@ -72,6 +73,12 @@ export default {
         y: 0,
         opacity: 1
       })
+
+      gsap.to('.logo5', {
+          duration: 1,
+          x: 0,
+          opacity: 1
+      })
     }
   },
 }
@@ -109,6 +116,11 @@ export default {
 
 .logo4{
   transform: translateY(1rem);
+  opacity: 0;
+}
+
+.logo5{
+  transform: translateX(1rem);
   opacity: 0;
 }
 
