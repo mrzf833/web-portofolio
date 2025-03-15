@@ -72,6 +72,43 @@ export default {
                     ]
                 },
                 {
+                    img: require(`~/assets/project/puti_logo.jpg`),
+                    head: "Api New SSO Telkom University",
+                    body: "Saya mengembangkan backend untuk sistem Single Sign-On (SSO) guna memenuhi kebutuhan Universitas Telkom. Sistem ini dirancang untuk mengelola autentikasi pengguna secara terpusat, sehingga dapat digunakan di berbagai aplikasi yang ada di lingkungan Universitas Telkom. Dengan implementasi SSO ini, proses login menjadi lebih efisien, aman, dan terintegrasi, memungkinkan pengguna untuk mengakses berbagai layanan universitas dengan satu kali autentikasi tanpa perlu login berulang kali di setiap aplikasi.",
+                    teknologi: [
+                        'Go Echo',
+                        'postgresql',
+                        'redis',
+                        'queue',
+                        'cmd',
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/puti_logo.jpg`),
+                    head: "Api SATU Data Universitas Sumatera Utara",
+                    body: "Saya mengembangkan backend untuk sistem Satu Data guna memenuhi kebutuhan Universitas Sumatera Utara (USU) melalui Telkom University (PUTI). Pengembangan ini berfokus pada integrasi dan pengelolaan data di berbagai bidang, termasuk akademik, sumber daya manusia (SDM), alumni, serta dashboard pemantauan. Dengan sistem ini, diharapkan USU dapat memiliki ekosistem data yang lebih terstruktur, akurat, dan terpusat, sehingga dapat mendukung pengambilan keputusan yang lebih efektif dan efisien.",
+                    teknologi: [
+                        'laravel 6',
+                        'postgresql',
+                        'redis',
+                        'queue',
+                    ]
+                },
+                {
+                    img: require(`~/assets/project/puti_logo.jpg`),
+                    head: "Api SATU Data Telkom University",
+                    body: "Saya mengembangkan backend untuk sistem Satu Data yang dirancang khusus guna memenuhi kebutuhan Universitas Telkom, terutama di Bandung. Sistem ini bertujuan untuk mengintegrasikan dan mengelola data secara efisien di berbagai bidang, termasuk akademik, sumber daya manusia (SDM), alumni, serta dashboard pemantauan. Dengan pengembangan ini, diharapkan Universitas Telkom dapat memiliki sistem yang lebih terstruktur, akurat, dan terpusat untuk mendukung pengambilan keputusan yang lebih baik.",
+                    teknologi: [
+                        'laravel 6',
+                        'postgresql',
+                        'redis',
+                        'queue',
+                        'Go Echo',
+                        'Nest JS',
+                        'Node JS',
+                    ]
+                },
+                {
                     img: require(`~/assets/project/rest_api_gofiber.png`),
                     head: "Rest Api Gofiber",
                     body: "Rest API ini dibuat untuk mempelajari tentang Golang Fiber. Di sini, Saya mengimplementasikan JWT untuk autentikasi, Gorm untuk ORM, Redis untuk caching, command-line interface, Elasticsearch, goroutines, dan queue. Beberapa fitur tersebut telah berhasil diimplementasikan dalam proyek ini.",
