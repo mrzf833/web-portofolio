@@ -1,12 +1,15 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "nuxt.config.js",
-            "use": "@nuxtjs/vercel-builder",
-            "config": {
-              "serverFiles": ["server-middleware/**"]
-            }
-        }
+      {
+        "src": "nuxt.config.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
     ]
   }
