@@ -39,7 +39,7 @@ export default {
   build: {
   },
 
-  target: 'server',
+  // target: 'server',
 
   // server: {
   //   port: 3000, // default: 3000
