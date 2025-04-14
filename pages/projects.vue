@@ -227,7 +227,9 @@ export default {
         }
     },
     mounted() {
-        this.start()
+        setTimeout(() => {
+            this.start()
+        }, 30)
     },
 
     methods: {
