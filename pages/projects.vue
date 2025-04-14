@@ -227,9 +227,9 @@ export default {
         }
     },
     mounted() {
-        setTimeout(() => {
+        this.$nextTick(() => {
             this.start()
-        }, 30)
+        })
     },
 
     methods: {
