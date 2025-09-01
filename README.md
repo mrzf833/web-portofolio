@@ -26,3 +26,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### remove
 - docker compose down --rmi=all
+
+
+<!-- Security scan triggered at 2025-09-02 00:02:59 -->
