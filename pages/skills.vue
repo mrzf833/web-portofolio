@@ -49,77 +49,110 @@ export default {
         NuxtjsLogo, PostgresqlLogo
     },
     data() {
+
+        // format mm/dd/yyyy
+        let phpStart = new Date("11/1/2019")
+        let cssStart = new Date("11/1/2019")
+        let mysqlStart = new Date("11/1/2019")
+        let javascriptStart = new Date("11/1/2019")
+        let jqueryStart = new Date("11/1/2019")
+        let laravelStart = new Date("1/1/2020")
+        let bootstrapStart = new Date("1/1/2020")
+        let vueStart = new Date("5/1/2021")
+        let nuxtjsStart = new Date("5/1/2021")
+        let tailwindcssStart = new Date("5/1/2021")
+        let postgresqlStart = new Date("5/1/2021")
+        let mongoStart = new Date("3/1/2021")
+        let golangStart = new Date("9/1/2022")
+        let fiberStart = new Date("9/1/2022")
+
+        let phpEnd = new Date()
+        let cssEnd = new Date()
+        let mysqlEnd = new Date()
+        let javascriptEnd = new Date()
+        let jqueryEnd = new Date()
+        let laravelEnd = new Date()
+        let bootstrapEnd = new Date()
+        let vueEnd = new Date("8/1/2023")
+        let nuxtjsEnd = new Date("8/1/2023")
+        let tailwindcssEnd = new Date("8/1/2023")
+        let postgresqlEnd = new Date()
+        let mongoEnd = new Date("5/1/2023")
+        let golangEnd = new Date()
+        let fiberEnd = new Date()
+
+
         return {
             cards: [
                 {
                     logo: 'LogoPhp',
                     head: 'PHP',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(phpStart, phpEnd) + ' Year'
                 },
                 {
                     logo: 'CssLogo',
                     head: 'CSS',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(cssStart, cssEnd) + ' Year'
                 },
                 {
                     logo: 'MysqlLogo',
                     head: 'MYSQL',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(mysqlStart, mysqlEnd) + ' Year'
                 },
                 {
                     logo: 'JavascriptLogo',
                     head: 'JAVASCRIPT',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(javascriptStart, javascriptEnd) + ' Year'
                 },
                 {
                     logo: 'JqueryLogo',
                     head: 'JQUERY',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(jqueryStart, jqueryEnd) + ' Year'
                 },
                 {
                     logo: 'LaravelLogo',
                     head: 'LARAVEL',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(laravelStart, laravelEnd) + ' Year'
                 },
                 {
                     logo: 'BootstrapLogo',
                     head: 'BOOTSTRAP',
-                    time: '> 4 Year'
+                    time: '> ' + this.getYearDiff(bootstrapStart, bootstrapEnd) + ' Year'
                 },
                 {
                     logo: 'VueLogo',
                     head: 'VUEJS',
-                    time: '< 2 Year'
+                    time: '> ' + this.getYearDiff(vueStart, vueEnd) + ' Year'
                 },
                 {
                     logo: 'NuxtjsLogo',
                     head: 'NUXTJS',
-                    time: '< 2 Year'
+                    time: '> ' + this.getYearDiff(nuxtjsStart, nuxtjsEnd) + ' Year'
                 },
                 {
                     logo: 'TailwindcssLogo',
                     head: 'Tailwindcss',
-                    time: '< 2 Year'
+                    time: '> ' + this.getYearDiff(tailwindcssStart, tailwindcssEnd) + ' Year'
                 },
                 {
                     logo: 'PostgresqlLogo',
                     head: 'POSTGRESQL',
-                    time: '< 3 Year'
+                    time: '> ' + this.getYearDiff(postgresqlStart, postgresqlEnd) + ' Year'
                 },
                 {
                     logo: 'MongoLogo',
                     head: 'MongoLogo',
-                    time: '< 2 Year'
+                    time: '> ' + this.getYearDiff(mongoStart, mongoEnd) + ' Year'
                 },
                 {
                     logo: 'GolangLogo',
                     head: 'Golang',
-                    time: '> 2 Year'
+                    time: '> ' + this.getYearDiff(golangStart, golangEnd) + ' Year'
                 },
                 {
                     logo: 'FiberLogo',
                     head: 'GoFiber',
-                    time: '> 2 Year'
+                    time: '> ' + this.getYearDiff(fiberStart, fiberEnd) + ' Year'
                 },
             ]
         }
@@ -161,6 +194,19 @@ export default {
                 })
             }
         },
+
+        getYearDiff: function(phpStart, phpEnd){
+            let years = phpEnd.getFullYear() - phpStart.getFullYear();
+
+            // jika bulan belum lewat atau bulan sama tapi tanggal belum sama → kurangi 1 tahun
+            if (
+            phpEnd.getMonth() < phpStart.getMonth()
+            ) {
+            years--;
+            }
+
+            return years
+        }
     },
 }
 </script>
